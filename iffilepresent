@@ -1,0 +1,12 @@
+#!/bin/sh
+## this should do a task if a file is there
+
+file=/path/to/file
+
+if 
+ls $file &> /dev/null; 
+then
+echo "do the thing"
+else
+:
+fi
