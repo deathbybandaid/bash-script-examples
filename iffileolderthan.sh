@@ -2,6 +2,8 @@
 ## this should do a task if a file is older than 30 minutes
 ## (in seconds)
 
+file=/path/to/file
+
 if 
 [ `stat --format=%Y $file` -le $(( `date +%s` - 1800 )) ]
 then 
