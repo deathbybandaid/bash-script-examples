@@ -13,3 +13,9 @@ printf "$yellow"  "This is a test in yellow"
 printf "$blue"    "This is a test in blue"
 printf "$magenta" "This is a test in magenta"
 printf "$cyan"    "This is a test in cyan"
+
+
+## This will list more colors
+for code in {0..255}
+    do echo -e "\e[38;5;${code}m"'\\e[38;5;'"$code"m"\e[0m"
+  done
